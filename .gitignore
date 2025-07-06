@@ -1,7 +1,25 @@
-# 忽略所有 __pycache__ 目录
-*/__pycache__/
-
-__pycache__/
-# 忽略所有 .pyc 文件
+# Python 编译文件
+**/__pycache__/
 *.pyc
+*.pyo
+*.pyd
+*$py.class
 
+# 打包文件
+*.egg
+*.egg-info
+dist/
+build/
+*.whl
+
+# 测试相关
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+
+# IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
